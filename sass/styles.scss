@@ -1,0 +1,107 @@
+@import './variables/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+.container {
+    background-color: $dark-blue;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.advice-box {
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    background-color: $dark-grayish-blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.advice-content {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.advice-title {
+    color: $neon-green;
+    letter-spacing: 5px;
+}
+
+.advice-text {
+    font-size: 28px;
+    color: $light-cyan;
+    display: flex;
+    text-align: center; 
+}
+
+.advice-divider-desktop {
+    width: 90%;
+    margin: 1.5rem;
+}
+
+.advice-divider-mobile {
+    display: none;
+}
+
+button {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: $neon-green;
+    border-radius: 50%;
+    border: none;
+
+    &:hover {
+        box-shadow: 0 0 2em 0.5px $neon-green;
+    }
+}
+
+button img {
+    padding: 15px;
+}
+
+
+@media (max-width:425px)
+{
+    .advice-box {
+        width: 90%;
+        height: 50%;
+    }
+
+    .advice-content {
+        margin: 1.5rem;
+        gap: 1rem;
+    }
+
+    .advice-title {
+        font-size: 12px;
+    }
+
+    .advice-text {
+        font-size: 22px;
+    }
+
+    .advice-divider-desktop {
+       display: none;
+    }
+
+    .advice-divider-mobile {
+        display: inline-block;
+        width: 90%;
+        margin: 0.5rem;
+    }
+    
+}
