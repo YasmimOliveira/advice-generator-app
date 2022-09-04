@@ -42,6 +42,7 @@
 }
 
 .advice-text {
+    height: 80px;
     font-size: 28px;
     color: $light-cyan;
     display: flex;
@@ -55,6 +56,21 @@
 
 .advice-divider-mobile {
     display: none;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    color: $light-cyan;
+
+    & a {
+        text-decoration: none;
+        color: $neon-green;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 button {
@@ -91,6 +107,7 @@ button img {
     }
 
     .advice-text {
+        height: 150px;
         font-size: 22px;
     }
 

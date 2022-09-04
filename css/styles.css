@@ -40,6 +40,7 @@
 }
 
 .advice-text {
+  height: 80px;
   font-size: 28px;
   color: hsl(193deg, 38%, 86%);
   display: flex;
@@ -53,6 +54,19 @@
 
 .advice-divider-mobile {
   display: none;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  color: hsl(193deg, 38%, 86%);
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(150deg, 100%, 66%);
+}
+.attribution a:hover {
+  text-decoration: underline;
 }
 
 button {
@@ -83,6 +97,7 @@ button img {
     font-size: 12px;
   }
   .advice-text {
+    height: 150px;
     font-size: 22px;
   }
   .advice-divider-desktop {
