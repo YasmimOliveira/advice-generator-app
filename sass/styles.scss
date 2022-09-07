@@ -29,11 +29,11 @@
 }
 
 .advice-content {
-    margin: 2rem;
+    margin: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .advice-title {
@@ -43,9 +43,11 @@
 
 .advice-text {
     height: 80px;
-    font-size: 28px;
+    font-size: 26px;
     color: $light-cyan;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center; 
 }
 
@@ -73,7 +75,7 @@
     }
 }
 
-button {
+.advice-buttons button{
     width: 3.5rem;
     height: 3.5rem;
     background: $neon-green;
@@ -85,10 +87,19 @@ button {
     }
 }
 
-button img {
+.advice-buttons button img {
     padding: 15px;
 }
 
+#btn-search img{
+    width: 100%;
+}
+
+.advice-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
 
 @media (max-width:425px)
 {
@@ -121,4 +132,35 @@ button img {
         margin: 0.5rem;
     }
     
+}
+
+@media (min-width:426px) and (max-width:768px) {
+    .advice-box {
+        width: 70%;
+        height: 50%;
+    }
+
+    .advice-content {
+        margin: 1.5rem;
+        gap: 1rem;
+    }
+
+    .advice-title {
+        font-size: 12px;
+    }
+
+    .advice-text {
+        height: 120px;
+        font-size: 22px;
+    }
+
+    .advice-divider-desktop {
+       display: none;
+    }
+
+    .advice-divider-mobile {
+        display: inline-block;
+        width: 90%;
+        margin: 0.5rem;
+    }
 }
